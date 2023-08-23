@@ -1,5 +1,5 @@
-def call(){
-    
-withAWS(region: 'us-east-1') {
-    sh 'aws s3 ls'
+def call(String region){
+    withAWS('region':region) {
+         sh 'aws s3 ls'
+    }
 }
