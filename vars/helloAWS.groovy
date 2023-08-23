@@ -1,6 +1,6 @@
 def call(){
 
-withAWS(region:'eu-west-1') {
-    // do something
- }
+    withAWS(region:region) {
+         sh 'aws s3 ls'
+    }
 }
