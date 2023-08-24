@@ -4,7 +4,7 @@
 //    }
 // }
 
-def call(String myRole, String region, String aws_account_id, Integer myDuration) {
+def call(String region) {
     withAWS('region': region) {
          sh 'aws s3 ls'
     }
